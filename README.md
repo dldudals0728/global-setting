@@ -32,7 +32,7 @@ brew install --cask visual-studio-code google-chrome iterm2
 그 후에 Preferences -> Profiles -> Colors -> 우측 하단의 color schemes를 다운받은 스키마로 변경!
 
 ## <i>step.5 install oh my zsh</i>
-[oh my zsh](https://ohmyz.sh, "oh my zsh")
+[oh my zsh](https://ohmyz.sh)
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -62,3 +62,56 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 ## <i>step.7 pwerlevel10k 꾸미기</i>
 1. 재시작 시 폰트 설치 여부를 묻는다. -> y(yes)
 2. 그 후 다시 iterm2를 실행하면 폰트들이 제대로 보이는지 확인한다.(검사 진행)
+
+> 에러 발생!<br>
+> 만약 폰트 검사를 하는데 깨져서 나온다?<br>
+> Preferences -> Profiles -> Text -> Font: MesloLGS NF로 변경!!
+
+3. 이제 아래와 같은 설정으로 진행한다. (custom 가능.)
+```
+(2) Classic.
+(1) Unicode.
+(3) Dark
+(2) 24-hour format.
+(1) Angled.
+(1) Sharp.
+(1) Flat.
+(1) One line.
+(1) Compact.
+(2) Many icons.
+(1) Concise.
+(n) No.
+
+설정 적용
+(1) Verbose (recommended)
+(y) Yes (recommended).
+```
+
+## <i>step.8 install gh</i>
+1. install gh
+```
+brew install gh
+```
+
+2. gh auth login
+```
+gh auth login
+
+Github.com
+HTTPS 선택
+Yes
+Login with a web browser 선택
+```
+화면에 보이는 코드를 browser에 입력 후 연결 완료
+
+## <i>step.9 vscode extension</i>
+```
+Prettier - Code formatter
+Material Icon Theme
+Community Material Theme
+```
+
+vscode terminal 아이콘 깨짐 현상 해결<br>
+Settings -> terminal font 검색 -> Terminal > Integrated: Font Family: MesloLGS NF 입력<br>
+
+확인해보면 아이콘이 제대로 나옴!
