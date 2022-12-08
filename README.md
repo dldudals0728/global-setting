@@ -6,7 +6,7 @@
 [nomadlink]: https://www.youtube.com/watch?v=B26yiuC5zPM "Thank you Nico!!"
 
 ## <i>step.1 install homebrew</i>
-[home brew](https://brew.sh/index_ko, "home brew")
+[home brew](https://brew.sh/index_ko)
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -24,7 +24,7 @@ brew install --cask visual-studio-code google-chrome iterm2
   + 하단 Auto-Rainbow: Light Colors 설정
 
 ## <i>step.4 iterm2-color-schemes setting</i>
-[iTerm Themes](https://iterm2colorschemes.com, "iterm2 color schemes")
+[iTerm Themes](https://iterm2colorschemes.com)
 
 위 사이트에 방문하여 GitHub Dark 클릭 -> <kbd>⌘</kbd> + <kbd>s</kbd> 버튼으로 파일 저장<br>
   -> 다운로드 된 디렉토리로 이동하여 저장된 파일의 확장자(.txt)를 지우고, 파일을 실행항 테마르 적용시킨다.
@@ -40,11 +40,19 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 터미널에 해당 명령어를 입력하여 oh my zsh 설치
 
 ## <i>step.6 oh my zsh 꾸미기 Powerlevel 10K</i>
-[powerlevel10k](https://github.com/romkatv/powerlevel10k, "Powerlevel 10K")
+[powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
-해당 링크로 접속 후, Installation -> Oh My Zsh -> 1. Clone the repository 의 코드를 터미널에 입력하여 설치
+1. 해당 링크로 접속 후, Installation -> Oh My Zsh -> 1. Clone the repository 의 코드를 터미널에 입력하여 설치
 ```
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
+2. 해당 코드로 설정 파일을 vscode로 연다.
+```
+code ~/.zshrc
+```
 
+그리고 아래와 같이 파일을 수정해준다. (line. 11)
+```
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
