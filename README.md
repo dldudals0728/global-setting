@@ -56,3 +56,9 @@ code ~/.zshrc
 ```
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
+
+후에 iterm2를 종료하고, 다시 시작하면 테마 설정 화면으로 넘어간다.
+
+## <i>step.7 pwerlevel10k 꾸미기</i>
+1. 재시작 시 폰트 설치 여부를 묻는다. -> y(yes)
+2. 그 후 다시 iterm2를 실행하면 폰트들이 제대로 보이는지 확인한다.(검사 진행)
